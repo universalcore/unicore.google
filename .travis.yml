@@ -7,6 +7,6 @@ install:
   - pip install -r requirements-dev.txt
   - pip install -e .
 script:
-  - py.test unicore.google
+  - py.test unicore
 after_success:
   - coveralls

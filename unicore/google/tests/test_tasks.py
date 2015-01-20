@@ -5,7 +5,7 @@ from mock import patch
 from unicore.google.tasks import pageview
 
 
-class TestTasks(TestTasks):
+class TestTasks(TestCase):
 
     @patch('urllib2.urlopen')
     def test_pageview(self, mock_request):

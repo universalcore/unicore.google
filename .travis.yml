@@ -10,3 +10,11 @@ script:
   - py.test unicore
 after_success:
   - coveralls
+deploy:
+  provider: pypi
+  user: Praekelt
+  password:
+    secure: Rm1r0YxX1yYLen5Omqx8dvLGLVa9yyUG1osFd9WnUbTs7roK/eLK8A5tg6+2fefXGx5gpazdZJopp5nuWfnAnaGfWvNLeHBihYt70H5tJmsfyIGkb8w8Pa0J4rPU52Yx0k2L8ca0pVLwU0qf0MoR59X+T0ZoeibIkwBup9G/CGM=
+  on:
+    tags: true
+    all_branches: true
